@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+
+		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
+			<Id>
+				<TypeId>LandingGear</TypeId>
+				<SubtypeId>LBMagLockSurface</SubtypeId>
+			</Id>
+			<DisplayName>Maglock Surface</DisplayName>
+			<Icon>Textures\maglock_icon.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Maglock.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<LockSound>ShipLandGearOn</LockSound>
+			<UnlockSound>ShipLandGearOff</UnlockSound>
+			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
+			<Components>
+				<Component Subtype="SteelPlate" Count="35" />
+				<Component Subtype="SteelPlate" Count="15" />
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Maglock_C1.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_C2.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>MagLockSurface</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<DeformationRatio>0</DeformationRatio>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>10</BuildTimeSeconds>
+			<DisassembleRatio>3</DisassembleRatio>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
+			<Id>
+				<TypeId>LandingGear</TypeId>
+				<SubtypeId>SBMagLockSurface</SubtypeId>
+			</Id>
+			<DisplayName>Maglock Surface</DisplayName>
+			<Icon>Textures\maglock_icon.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Maglock_S1.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<LockSound>ShipLandGearOn</LockSound>
+			<UnlockSound>ShipLandGearOff</UnlockSound>
+			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
+			<Components>
+				<Component Subtype="SteelPlate" Count="3" />
+				<Component Subtype="SteelPlate" Count="2" />
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Maglock_S1_C1.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_S1_C2.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>MagLockSurface</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<DeformationRatio>0</DeformationRatio>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>3</BuildTimeSeconds>
+			<DisassembleRatio>3</DisassembleRatio>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
+			<Id>
+				<TypeId>LandingGear</TypeId>
+				<SubtypeId>SBMagLockSurface3</SubtypeId>
+			</Id>
+			<DisplayName>Maglock Surface 3x3</DisplayName>
+			<Icon>Textures\maglock_icon.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="1" z="3" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Maglock_S3.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<LockSound>ShipLandGearOn</LockSound>
+			<UnlockSound>ShipLandGearOff</UnlockSound>
+			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
+			<Components>
+				<Component Subtype="SteelPlate" Count="4" />
+				<Component Subtype="SteelPlate" Count="2" />
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Maglock_S3_C1.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_S3_C2.mwm" />
+			</BuildProgressModels>
+			<BlockPairName>MagLockSurface3</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<DeformationRatio>0</DeformationRatio>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>4</BuildTimeSeconds>
+			<DisassembleRatio>3</DisassembleRatio>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
+			<Id>
+				<TypeId>LandingGear</TypeId>
+				<SubtypeId>LBMagLockCube</SubtypeId>
+			</Id>
+			<DisplayName>Maglock Cube</DisplayName>
+			<Icon>Textures\maglock_cube_icon.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Maglock_Cube.mwm</Model>
+			<LockSound>ShipLandGearOn</LockSound>
+			<UnlockSound>ShipLandGearOff</UnlockSound>
+			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
+			<Components>
+				<Component Subtype="SteelPlate" Count="55" />
+				<Component Subtype="SteelPlate" Count="15" />
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.25" File="Models\Maglock_Cube_C1.mwm" />
+				<Model BuildPercentUpperBound="0.50" File="Models\Maglock_Cube_C2.mwm" />
+				<Model BuildPercentUpperBound="0.75" File="Models\Maglock_Cube_C3.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_Cube_C4.mwm" />
+			</BuildProgressModels>
+			<MountPoints>
+				<MountPoint Side="Top"    StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Left"   StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Right"  StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Back"   StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BlockPairName>MagLockCube</BlockPairName>
+			<MirroringZ>Y</MirroringZ>
+			<DeformationRatio>0</DeformationRatio>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>12</BuildTimeSeconds>
+			<DisassembleRatio>3</DisassembleRatio>
+		</Definition>
+
+	</CubeBlocks>
+</Definitions>

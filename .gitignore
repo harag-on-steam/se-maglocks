@@ -1,0 +1,7 @@
+.autosave/
+.settings/
+.project
+*.fbx
+thumb*
+*.blend1
+
