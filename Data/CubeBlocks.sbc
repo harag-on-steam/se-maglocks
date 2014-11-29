@@ -151,5 +151,42 @@
 			<DisassembleRatio>3</DisassembleRatio>
 		</Definition>
 
+		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
+			<Id>
+				<TypeId>LandingGear</TypeId>
+				<SubtypeId>LBMaglockPad</SubtypeId>
+			</Id>
+			<DisplayName>Maglock Pad</DisplayName>
+			<Icon>Textures\MaglockPad_Icon.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Maglock_Pad.mwm</Model>
+			<UseModelIntersection>true</UseModelIntersection>
+			<LockSound>ShipLandGearOn</LockSound>
+			<UnlockSound>ShipLandGearOff</UnlockSound>
+			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
+			<Components>
+				<Component Subtype="SteelPlate" Count="35" />
+				<Component Subtype="SteelPlate" Count="15" />
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Maglock_Pad_C1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="Models\Maglock_Pad_C2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_Pad_C3.mwm" />
+			</BuildProgressModels>
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BlockPairName>MaglockPad</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<DeformationRatio>0</DeformationRatio>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>10</BuildTimeSeconds>
+			<DisassembleRatio>3</DisassembleRatio>
+		</Definition>
+		
 	</CubeBlocks>
 </Definitions>
