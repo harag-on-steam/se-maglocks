@@ -154,6 +154,45 @@
 		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
 			<Id>
 				<TypeId>LandingGear</TypeId>
+				<SubtypeId>SBMagLockCube</SubtypeId>
+			</Id>
+			<DisplayName>Maglock Cube</DisplayName>
+			<Icon>Textures\maglock_cube_icon.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Maglock_Cube_S1.mwm</Model>
+			<LockSound>ShipLandGearOn</LockSound>
+			<UnlockSound>ShipLandGearOff</UnlockSound>
+			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
+			<Components>
+				<Component Subtype="SteelPlate" Count="4" />
+				<Component Subtype="SteelPlate" Count="2" />
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Maglock_Cube_S1_C1.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_Cube_S1_C2.mwm" />
+			</BuildProgressModels>
+			<MountPoints>
+				<MountPoint Side="Top"    StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Left"   StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Right"  StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Back"   StartX="0" StartY="0" EndX="1" EndY="1" />
+			</MountPoints>
+			<BlockPairName>MagLockCube</BlockPairName>
+			<MirroringZ>Y</MirroringZ>
+			<DeformationRatio>0</DeformationRatio>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>5</BuildTimeSeconds>
+			<DisassembleRatio>3</DisassembleRatio>
+		</Definition>
+
+		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
+			<Id>
+				<TypeId>LandingGear</TypeId>
 				<SubtypeId>LBMaglockPad</SubtypeId>
 			</Id>
 			<DisplayName>Maglock Pad</DisplayName>
