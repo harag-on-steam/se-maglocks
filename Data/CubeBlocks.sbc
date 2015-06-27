@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<CubeBlocks>
 
 		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
@@ -8,12 +8,12 @@
 				<SubtypeId>LBMagLockSurface</SubtypeId>
 			</Id>
 			<DisplayName>Maglock Surface</DisplayName>
-			<Icon>Textures\maglock_icon.dds</Icon>
+			<Icon>Textures\Icons\MagLockSurface.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="1" />
 			<ModelOffset x="0" y="0" z="0" />
-			<Model>Models\Maglock.mwm</Model>
+			<Model>Models\LBMagLockSurface.mwm</Model>
 			<UseModelIntersection>true</UseModelIntersection>
 			<LockSound>ShipLandGearOn</LockSound>
 			<UnlockSound>ShipLandGearOff</UnlockSound>
@@ -24,14 +24,17 @@
 			</Components>
 			<CriticalComponent Subtype="SteelPlate" Index="0" />
 			<MountPoints>
-				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
 			</MountPoints>
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.50" File="Models\Maglock_C1.mwm" />
-				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_C2.mwm" />
+				<Model BuildPercentUpperBound="0.33" File="Models\LBMagLockSurface_Constr1.mwm" />
+				<Model BuildPercentUpperBound="0.67" File="Models\LBMagLockSurface_Constr2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\LBMagLockSurface_Constr3.mwm" />
 			</BuildProgressModels>
 			<BlockPairName>MagLockSurface</BlockPairName>
-			<MirroringY>Z</MirroringY>
+			<MirroringX>None</MirroringX>
+			<MirroringY>X</MirroringY>
+			<MirroringZ>None</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
 			<BuildTimeSeconds>10</BuildTimeSeconds>
@@ -44,12 +47,12 @@
 				<SubtypeId>SBMagLockSurface</SubtypeId>
 			</Id>
 			<DisplayName>Maglock Surface</DisplayName>
-			<Icon>Textures\maglock_icon.dds</Icon>
+			<Icon>Textures\Icons\MagLockSurface.dds</Icon>
 			<CubeSize>Small</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="1" />
 			<ModelOffset x="0" y="0" z="0" />
-			<Model>Models\Maglock_S1.mwm</Model>
+			<Model>Models\SBMagLockSurface.mwm</Model>
 			<UseModelIntersection>true</UseModelIntersection>
 			<LockSound>ShipLandGearOn</LockSound>
 			<UnlockSound>ShipLandGearOff</UnlockSound>
@@ -60,14 +63,17 @@
 			</Components>
 			<CriticalComponent Subtype="SteelPlate" Index="0" />
 			<MountPoints>
-				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
 			</MountPoints>
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.50" File="Models\Maglock_S1_C1.mwm" />
-				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_S1_C2.mwm" />
+				<Model BuildPercentUpperBound="0.33" File="Models\SBMagLockSurface_Constr1.mwm" />
+				<Model BuildPercentUpperBound="0.67" File="Models\SBMagLockSurface_Constr2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\SBMagLockSurface_Constr3.mwm" />
 			</BuildProgressModels>
 			<BlockPairName>MagLockSurface</BlockPairName>
-			<MirroringY>Z</MirroringY>
+			<MirroringX>None</MirroringX>
+			<MirroringY>X</MirroringY>
+			<MirroringZ>None</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
 			<BuildTimeSeconds>3</BuildTimeSeconds>
@@ -80,12 +86,12 @@
 				<SubtypeId>SBMagLockSurface3</SubtypeId>
 			</Id>
 			<DisplayName>Maglock Surface 3x3</DisplayName>
-			<Icon>Textures\maglock_icon.dds</Icon>
+			<Icon>Textures\Icons\MagLockSurface3.dds</Icon>
 			<CubeSize>Small</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="3" y="1" z="3" />
 			<ModelOffset x="0" y="0" z="0" />
-			<Model>Models\Maglock_S3.mwm</Model>
+			<Model>Models\SBMagLockSurface3.mwm</Model>
 			<UseModelIntersection>true</UseModelIntersection>
 			<LockSound>ShipLandGearOn</LockSound>
 			<UnlockSound>ShipLandGearOff</UnlockSound>
@@ -96,14 +102,17 @@
 			</Components>
 			<CriticalComponent Subtype="SteelPlate" Index="0" />
 			<MountPoints>
-				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
 			</MountPoints>
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.50" File="Models\Maglock_S3_C1.mwm" />
-				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_S3_C2.mwm" />
+				<Model BuildPercentUpperBound="0.33" File="Models\SBMagLockSurface3_Constr1.mwm" />
+				<Model BuildPercentUpperBound="0.67" File="Models\SBMagLockSurface3_Constr2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\SBMagLockSurface3_Constr3.mwm" />
 			</BuildProgressModels>
 			<BlockPairName>MagLockSurface3</BlockPairName>
-			<MirroringY>Z</MirroringY>
+			<MirroringX>None</MirroringX>
+			<MirroringY>X</MirroringY>
+			<MirroringZ>None</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
 			<BuildTimeSeconds>4</BuildTimeSeconds>
@@ -116,12 +125,12 @@
 				<SubtypeId>LBMagLockCube</SubtypeId>
 			</Id>
 			<DisplayName>Maglock Cube</DisplayName>
-			<Icon>Textures\maglock_cube_icon.dds</Icon>
+			<Icon>Textures\Icons\MagLockCube.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="1" />
 			<ModelOffset x="0" y="0" z="0" />
-			<Model>Models\Maglock_Cube.mwm</Model>
+			<Model>Models\LBMagLockCube.mwm</Model>
 			<LockSound>ShipLandGearOn</LockSound>
 			<UnlockSound>ShipLandGearOff</UnlockSound>
 			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
@@ -131,19 +140,14 @@
 			</Components>
 			<CriticalComponent Subtype="SteelPlate" Index="0" />
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.25" File="Models\Maglock_Cube_C1.mwm" />
-				<Model BuildPercentUpperBound="0.50" File="Models\Maglock_Cube_C2.mwm" />
-				<Model BuildPercentUpperBound="0.75" File="Models\Maglock_Cube_C3.mwm" />
-				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_Cube_C4.mwm" />
+				<Model BuildPercentUpperBound="0.25" File="Models\LBMagLockCube_Constr1.mwm" />
+				<Model BuildPercentUpperBound="0.50" File="Models\LBMagLockCube_Constr2.mwm" />
+				<Model BuildPercentUpperBound="0.75" File="Models\LBMagLockCube_Constr3.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\LBMagLockCube_Constr4.mwm" />
 			</BuildProgressModels>
-			<MountPoints>
-				<MountPoint Side="Top"    StartX="0" StartY="0" EndX="1" EndY="1" />
-				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
-				<MountPoint Side="Left"   StartX="0" StartY="0" EndX="1" EndY="1" />
-				<MountPoint Side="Right"  StartX="0" StartY="0" EndX="1" EndY="1" />
-				<MountPoint Side="Back"   StartX="0" StartY="0" EndX="1" EndY="1" />
-			</MountPoints>
 			<BlockPairName>MagLockCube</BlockPairName>
+			<MirroringX>None</MirroringX>
+			<MirroringY>None</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
@@ -157,12 +161,12 @@
 				<SubtypeId>SBMagLockCube</SubtypeId>
 			</Id>
 			<DisplayName>Maglock Cube</DisplayName>
-			<Icon>Textures\maglock_cube_icon.dds</Icon>
+			<Icon>Textures\Icons\MagLockCube.dds</Icon>
 			<CubeSize>Small</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="1" />
 			<ModelOffset x="0" y="0" z="0" />
-			<Model>Models\Maglock_Cube_S1.mwm</Model>
+			<Model>Models\SBMagLockCube.mwm</Model>
 			<LockSound>ShipLandGearOn</LockSound>
 			<UnlockSound>ShipLandGearOff</UnlockSound>
 			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
@@ -172,17 +176,14 @@
 			</Components>
 			<CriticalComponent Subtype="SteelPlate" Index="0" />
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.50" File="Models\Maglock_Cube_S1_C1.mwm" />
-				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_Cube_S1_C2.mwm" />
+				<Model BuildPercentUpperBound="0.25" File="Models\SBMagLockCube_Constr1.mwm" />
+				<Model BuildPercentUpperBound="0.50" File="Models\SBMagLockCube_Constr2.mwm" />
+				<Model BuildPercentUpperBound="0.75" File="Models\SBMagLockCube_Constr3.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\SBMagLockCube_Constr4.mwm" />
 			</BuildProgressModels>
-			<MountPoints>
-				<MountPoint Side="Top"    StartX="0" StartY="0" EndX="1" EndY="1" />
-				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
-				<MountPoint Side="Left"   StartX="0" StartY="0" EndX="1" EndY="1" />
-				<MountPoint Side="Right"  StartX="0" StartY="0" EndX="1" EndY="1" />
-				<MountPoint Side="Back"   StartX="0" StartY="0" EndX="1" EndY="1" />
-			</MountPoints>
 			<BlockPairName>MagLockCube</BlockPairName>
+			<MirroringX>None</MirroringX>
+			<MirroringY>None</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
@@ -196,12 +197,12 @@
 				<SubtypeId>LBMaglockPad</SubtypeId>
 			</Id>
 			<DisplayName>Maglock Pad</DisplayName>
-			<Icon>Textures\MaglockPad_Icon.dds</Icon>
+			<Icon>Textures\Icons\MaglockPad.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="1" />
 			<ModelOffset x="0" y="0" z="0" />
-			<Model>Models\Maglock_Pad.mwm</Model>
+			<Model>Models\LBMaglockPad.mwm</Model>
 			<UseModelIntersection>true</UseModelIntersection>
 			<LockSound>ShipLandGearOn</LockSound>
 			<UnlockSound>ShipLandGearOff</UnlockSound>
@@ -212,15 +213,17 @@
 			</Components>
 			<CriticalComponent Subtype="SteelPlate" Index="0" />
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\Maglock_Pad_C1.mwm" />
-				<Model BuildPercentUpperBound="0.66" File="Models\Maglock_Pad_C2.mwm" />
-				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_Pad_C3.mwm" />
+				<Model BuildPercentUpperBound="0.33" File="Models\LBMaglockPad_Constr1.mwm" />
+				<Model BuildPercentUpperBound="0.67" File="Models\LBMaglockPad_Constr2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\LBMaglockPad_Constr3.mwm" />
 			</BuildProgressModels>
 			<MountPoints>
-				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
 			</MountPoints>
 			<BlockPairName>MaglockPad</BlockPairName>
-			<MirroringY>Z</MirroringY>
+			<MirroringX>None</MirroringX>
+			<MirroringY>X</MirroringY>
+			<MirroringZ>None</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
 			<BuildTimeSeconds>10</BuildTimeSeconds>
@@ -233,12 +236,12 @@
 				<SubtypeId>SBMaglockPad</SubtypeId>
 			</Id>
 			<DisplayName>Maglock Pad</DisplayName>
-			<Icon>Textures\MaglockPad_Icon.dds</Icon>
+			<Icon>Textures\Icons\MaglockPad.dds</Icon>
 			<CubeSize>Small</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="1" />
 			<ModelOffset x="0" y="0" z="0" />
-			<Model>Models\Maglock_Pad_S1.mwm</Model>
+			<Model>Models\SBMaglockPad.mwm</Model>
 			<UseModelIntersection>true</UseModelIntersection>
 			<LockSound>ShipLandGearOn</LockSound>
 			<UnlockSound>ShipLandGearOff</UnlockSound>
@@ -249,19 +252,22 @@
 			</Components>
 			<CriticalComponent Subtype="SteelPlate" Index="0" />
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.50" File="Models\Maglock_Pad_S1_C1.mwm" />
-				<Model BuildPercentUpperBound="1.00" File="Models\Maglock_Pad_S1_C2.mwm" />
+				<Model BuildPercentUpperBound="0.33" File="Models\SBMaglockPad_Constr1.mwm" />
+				<Model BuildPercentUpperBound="0.67" File="Models\SBMaglockPad_Constr2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\SBMaglockPad_Constr3.mwm" />
 			</BuildProgressModels>
 			<MountPoints>
-				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
 			</MountPoints>
 			<BlockPairName>MaglockPad</BlockPairName>
-			<MirroringY>Z</MirroringY>
+			<MirroringX>None</MirroringX>
+			<MirroringY>X</MirroringY>
+			<MirroringZ>None</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
 			<BuildTimeSeconds>4</BuildTimeSeconds>
 			<DisassembleRatio>3</DisassembleRatio>
 		</Definition>
-		
+
 	</CubeBlocks>
 </Definitions>

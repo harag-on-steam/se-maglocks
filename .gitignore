@@ -4,4 +4,8 @@
 *.fbx
 thumb*
 *.blend1
+paint*/
+*.mwm
+Models/*.xml
+*.hkt
 
