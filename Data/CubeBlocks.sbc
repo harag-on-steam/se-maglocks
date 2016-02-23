@@ -20,9 +20,10 @@
 			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
 			<Components>
 				<Component Subtype="SteelPlate" Count="35" />
+				<Component Subtype="Construction" Count="10" />
 				<Component Subtype="SteelPlate" Count="15" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<CriticalComponent Subtype="Construction" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
 			</MountPoints>
@@ -37,8 +38,9 @@
 			<MirroringZ>None</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
-			<BuildTimeSeconds>10</BuildTimeSeconds>
-			<DisassembleRatio>3</DisassembleRatio>
+			<BuildTimeSeconds>15</BuildTimeSeconds>
+			<DamageEffectId>214</DamageEffectId>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
 		</Definition>
 
 		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
@@ -59,9 +61,10 @@
 			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
 			<Components>
 				<Component Subtype="SteelPlate" Count="3" />
+				<Component Subtype="Construction" Count="1" />
 				<Component Subtype="SteelPlate" Count="2" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<CriticalComponent Subtype="Construction" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
 			</MountPoints>
@@ -76,8 +79,9 @@
 			<MirroringZ>None</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
-			<BuildTimeSeconds>3</BuildTimeSeconds>
-			<DisassembleRatio>3</DisassembleRatio>
+			<BuildTimeSeconds>10</BuildTimeSeconds>
+			<DamageEffectId>214</DamageEffectId>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
 		</Definition>
 
 		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
@@ -98,9 +102,10 @@
 			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
 			<Components>
 				<Component Subtype="SteelPlate" Count="4" />
+				<Component Subtype="Construction" Count="1" />
 				<Component Subtype="SteelPlate" Count="2" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<CriticalComponent Subtype="Construction" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
 			</MountPoints>
@@ -115,8 +120,9 @@
 			<MirroringZ>None</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
-			<BuildTimeSeconds>4</BuildTimeSeconds>
-			<DisassembleRatio>3</DisassembleRatio>
+			<BuildTimeSeconds>10</BuildTimeSeconds>
+			<DamageEffectId>214</DamageEffectId>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
 		</Definition>
 
 		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
@@ -136,23 +142,32 @@
 			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
 			<Components>
 				<Component Subtype="SteelPlate" Count="55" />
+				<Component Subtype="Construction" Count="10" />
 				<Component Subtype="SteelPlate" Count="15" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<CriticalComponent Subtype="Construction" Index="0" />
 			<BuildProgressModels>
 				<Model BuildPercentUpperBound="0.25" File="Models\LBMagLockCube_Constr1.mwm" />
 				<Model BuildPercentUpperBound="0.50" File="Models\LBMagLockCube_Constr2.mwm" />
 				<Model BuildPercentUpperBound="0.75" File="Models\LBMagLockCube_Constr3.mwm" />
 				<Model BuildPercentUpperBound="1.00" File="Models\LBMagLockCube_Constr4.mwm" />
 			</BuildProgressModels>
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+			</MountPoints>
 			<BlockPairName>MagLockCube</BlockPairName>
 			<MirroringX>None</MirroringX>
 			<MirroringY>None</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
-			<BuildTimeSeconds>12</BuildTimeSeconds>
-			<DisassembleRatio>3</DisassembleRatio>
+			<BuildTimeSeconds>25</BuildTimeSeconds>
+			<DamageEffectId>214</DamageEffectId>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
 		</Definition>
 
 		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
@@ -172,23 +187,32 @@
 			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
 			<Components>
 				<Component Subtype="SteelPlate" Count="4" />
+				<Component Subtype="Construction" Count="1" />
 				<Component Subtype="SteelPlate" Count="2" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<CriticalComponent Subtype="Construction" Index="0" />
 			<BuildProgressModels>
 				<Model BuildPercentUpperBound="0.25" File="Models\SBMagLockCube_Constr1.mwm" />
 				<Model BuildPercentUpperBound="0.50" File="Models\SBMagLockCube_Constr2.mwm" />
 				<Model BuildPercentUpperBound="0.75" File="Models\SBMagLockCube_Constr3.mwm" />
 				<Model BuildPercentUpperBound="1.00" File="Models\SBMagLockCube_Constr4.mwm" />
 			</BuildProgressModels>
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
+			</MountPoints>
 			<BlockPairName>MagLockCube</BlockPairName>
 			<MirroringX>None</MirroringX>
 			<MirroringY>None</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
-			<BuildTimeSeconds>5</BuildTimeSeconds>
-			<DisassembleRatio>3</DisassembleRatio>
+			<BuildTimeSeconds>15</BuildTimeSeconds>
+			<DamageEffectId>214</DamageEffectId>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
 		</Definition>
 
 		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
@@ -209,9 +233,10 @@
 			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
 			<Components>
 				<Component Subtype="SteelPlate" Count="35" />
+				<Component Subtype="Construction" Count="10" />
 				<Component Subtype="SteelPlate" Count="15" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<CriticalComponent Subtype="Construction" Index="0" />
 			<BuildProgressModels>
 				<Model BuildPercentUpperBound="0.33" File="Models\LBMaglockPad_Constr1.mwm" />
 				<Model BuildPercentUpperBound="0.67" File="Models\LBMaglockPad_Constr2.mwm" />
@@ -226,8 +251,9 @@
 			<MirroringZ>None</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
-			<BuildTimeSeconds>10</BuildTimeSeconds>
-			<DisassembleRatio>3</DisassembleRatio>
+			<BuildTimeSeconds>15</BuildTimeSeconds>
+			<DamageEffectId>214</DamageEffectId>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
 		</Definition>
 
 		<Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
@@ -248,9 +274,10 @@
 			<FailedAttachSound>ShipLandGearNothing01</FailedAttachSound>
 			<Components>
 				<Component Subtype="SteelPlate" Count="3" />
+				<Component Subtype="Construction" Count="1" />
 				<Component Subtype="SteelPlate" Count="2" />
 			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0" />
+			<CriticalComponent Subtype="Construction" Index="0" />
 			<BuildProgressModels>
 				<Model BuildPercentUpperBound="0.33" File="Models\SBMaglockPad_Constr1.mwm" />
 				<Model BuildPercentUpperBound="0.67" File="Models\SBMaglockPad_Constr2.mwm" />
@@ -265,8 +292,9 @@
 			<MirroringZ>None</MirroringZ>
 			<DeformationRatio>0</DeformationRatio>
 			<EdgeType>Light</EdgeType>
-			<BuildTimeSeconds>4</BuildTimeSeconds>
-			<DisassembleRatio>3</DisassembleRatio>
+			<BuildTimeSeconds>10</BuildTimeSeconds>
+			<DamageEffectId>214</DamageEffectId>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
 		</Definition>
 
 	</CubeBlocks>
